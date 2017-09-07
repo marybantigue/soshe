@@ -1,0 +1,40 @@
+<article class="post-card {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+    <div class="columns is-gapless">
+        <div class="column">
+            <div class="post-card-content box">
+                <a class="post-card-content-link" href="{{url}}">
+                    <header class="post-card-header">  
+                        <h2 class="post-card-title is-size-3">{{title}}</h2>
+                    </header>
+                </a>
+                {{#if primary_tag}}
+                    <span class="post-card-tags">{{primary_tag.name}}</span>
+                {{/if}}
+                <section class="post-card-excerpt">
+                    <p>{{excerpt words="33"}}</p>
+                </section>
+                
+                <footer class="post-card-meta">
+                    <a class="button is-outlined read-more" href="{{url}}">CONTINUE READING</a>
+                    
+                    
+                    {{#if author.profile_image}}
+                        <figure class="image is-32x32">
+                            <img class="author-profile-image" src="{{author.profile_image}}" alt="{{author.name}}" />
+                        </figure>
+                    {{/if}}
+                    <span class="post-card-author">{{author}}</span>
+                </footer>
+            </div>
+        </div>
+        <div class="column is-one-quarter post-image-container">
+            {{#if feature_image}}
+                <a class="post-card-image-link" href="{{url}}">
+                    <div class="post-card-image" style="background-image: url({{feature_image}})"></div>
+                </a>
+            {{/if}}
+        </div>
+    </div>
+</article>
+
+   

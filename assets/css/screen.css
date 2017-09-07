@@ -1,0 +1,93 @@
+h1 , h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  color: #071229;
+}
+.site-container {
+  position: relative;
+}
+.nav-area {
+  width: 25%;
+  float: left;
+  position: fixed;
+  height: 100%;
+  background-size: cover;
+}
+.content-area {
+  width: 75%;
+  margin-left: 25%;
+}
+.site-title {
+  text-align: right;
+  margin-top: 25%;
+}
+.post-card-tags {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.post-card {
+  /* margin: 25px 0; */
+  /* padding: 10px 0; */
+  /* border-bottom: 1px solid #E4E4E4; */
+}
+.post-card-content {
+  padding: 5rem;
+  border-radius: 0;
+}
+.post-card-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 7px;
+}
+.post-card-image-link {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.post-card .post-image-container {
+  transition: all 0.2s ease-in 0.2s;
+}
+.post-card .post-image-container:hover {
+  width: 100%;
+}  
+.post-card-image {
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-position: center center;
+}
+.post-card-excerpt {
+  margin: 20px 0;
+}
+.post-card-meta {
+  margin: 25px 0 10px;
+}
+.post-card-meta .read-more {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 19px 45px;
+}
+.post-card-author {
+  float: right;
+  padding: 19px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.author-profile-image {
+  border-radius: 50%;
+  float: right;
+  padding-left: 10px;
+}
